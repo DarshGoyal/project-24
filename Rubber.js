@@ -1,13 +1,13 @@
 class Rubber{
-	constructor(x,y,r)
+	constructor(x,y,r){
 	var options = {
 		'restitution':0.8,
 		'friction':5,
 		'density':1,
 	}
 	
-	{
-	// assign options to the rubber ball
+	
+	 // assign options to the rubber ball
 		this.x=x;
 		this.y=y;
 		this.r=r
@@ -15,8 +15,7 @@ class Rubber{
 		World.add(world, this.body);
 
 	}
-	display()
-	{
+	display(){
 			var rubberpos=this.body.position;		
 			push()
 			translate(rubberpos.x, rubberpos.y);
